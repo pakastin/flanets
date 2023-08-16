@@ -366,12 +366,14 @@ function updateShip (deltaTime, once) {
           $intro.textContent = 'Fly around in your space ship with realistic gravity';
         } else if (diff < 8000) {
           $intro.textContent = 'and planets where they actually are right now in our galaxy';
+        } else if (diff < 11000) {
+          $intro.textContent = 'Source open at github.com/pakastin/flanets';
         } else {
           $intro.textContent = 'Have fun!';
         }
-        const rate = SCALE < 20
-          ? 1 + 1 * (SCALE / 20)
-          : SCALE < 200 ? (2 + 2 * SCALE / 200) : 4;
+        const rate = SCALE < 80
+          ? 1 + 1 * (SCALE / 80)
+          : SCALE < 250 ? (2 + 2 * SCALE / 200) : 4;
 
         zoom(rate, {
           x: 0.5,
