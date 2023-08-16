@@ -1,5 +1,5 @@
-# flanets
-Flanets 2D space flight simulator
+# Flanets.io
+2D space flight simulator
 
 ## Install dependencies
 `npm i`
