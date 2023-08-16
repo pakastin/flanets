@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Flanets
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    meta(name="mobile-web-app-capable" content="yes") 
+    meta(property="og:url" content="https://flanets.io")
+    meta(property="og:title" content="Flanets")
+    meta(property="og:description" content="Free 2D space flight simulator")
+    meta(property="og:image" content="https://flanets.io/og.png")
+    meta(property="twitter:card" content="summary_large_image")
+    link(rel="stylesheet" href="main.css")
+    link(rel="stylesheet" href="tabler/tabler-icons.min.css")
+    link(rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png")
+    link(rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png")
+    link(rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png")
+    link(rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png")
+    link(rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png")
+    link(rel="manifest" href="manifest.json")
+    meta(name="theme-color" content="#000000")
+  body
+    canvas#canvas
+    #scene
+      #ship
+        #fire
+        #shipimg
+    #logo
+      img(src="logo_white.svg")
+    #version alpha version
+    #speed
+    #keys
+    #intro
+      h1 Welcome to Flanets!
+      p Fly around in your space ship with realistic gravity and planets where they actually are right now in our galaxy
+    #throttle
+      .bar
+      .amount 100 %
+    #controls
+      .controls-left
+        .row
+          .button.locate.grey.disabled
+            .ti.ti-crosshair
+        .row
+          .button.minus.grey
+            .ti.ti-minus
+          .button.plus.grey
+            .ti.ti-plus
+        .row
+          .button.backward.grey
+            .ti.ti-player-track-prev-filled
+          .button.forward.grey
+            .ti.ti-player-track-next-filled
+      .controls-right
+        .row
+          .button.up
+            .ti.ti-caret-up-filled
+        .row
+          .button.left
+            .ti.ti-caret-left-filled
+          .button.right
+            .ti.ti-caret-right-filled
+    script(src="astronomy.js")
+    script(src="wheel.js")
+    script(src="main.js")
