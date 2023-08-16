@@ -3,6 +3,9 @@
 # Flanets.io
 Free and open source 2D space flight simulator
 
+## Play!
+https://flanets.io
+
 ## Install dependencies
 `npm i`
 
