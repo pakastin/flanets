@@ -8,7 +8,6 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', '/app/client');
-app.disable('x-powered-by');
 
 app.get('/', (req, res, next) => {
   res.render('index');
